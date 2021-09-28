@@ -1,0 +1,34 @@
+﻿using RabbitMQ.Client;
+using System.Text;
+
+var factory = new ConnectionFactory() { HostName = "localhost" };
+using (var connection = factory.CreateConnection())
+
+using (var channel = connection.CreateModel())
+{
+    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", false,
+        false, false,  null);
+
+    while (true)
+    {
+        Console.WriteLine("Write what you want to send");
+        Console.WriteLine("Write nothing to exit.");
+
+        string usermessage = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(usermessage))
+            break;
+
+        string message = usermessage;
+        var body = Encoding.UTF8.GetBytes(message);
+
+        channel.BasicPublish("", routingKey: "RabbitMqDotNet6Tutorial.01", null, body);
+
+        Console.WriteLine("");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("\tSent {0}", message);
+        Console.ForegroundColor = ConsoleColor.Gray;
+        Console.WriteLine("");
+    }
+
+}
