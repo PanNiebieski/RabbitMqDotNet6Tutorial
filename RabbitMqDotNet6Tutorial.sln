@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.02.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Publish_And_Subscribe", "3_Publish_And_Subscribe", "{86D34BAD-71CE-4F0C-9D4C-44907087A672}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.02.WorkerThatCanFail", "RabbitMqDotNet6Tutorial.02.WorkerThatCanFail\RabbitMqDotNet6Tutorial.02.WorkerThatCanFail.csproj", "{968CE780-212B-4B55-8F70-5F728C6FE203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7CE6D0B7-6940-4773-8589-60BD74A28E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE6D0B7-6940-4773-8589-60BD74A28E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE6D0B7-6940-4773-8589-60BD74A28E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968CE780-212B-4B55-8F70-5F728C6FE203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968CE780-212B-4B55-8F70-5F728C6FE203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968CE780-212B-4B55-8F70-5F728C6FE203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968CE780-212B-4B55-8F70-5F728C6FE203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{1E1D72C4-C31A-45DD-B00A-EFE64121C006} = {B2AC66AD-4C02-458A-8B32-D4567C86B03E}
 		{17534E8C-5AE8-4DD2-902A-7BC9F5ACA29C} = {7550B68F-7998-4D61-9D10-7D1D795F7270}
 		{7CE6D0B7-6940-4773-8589-60BD74A28E14} = {7550B68F-7998-4D61-9D10-7D1D795F7270}
+		{968CE780-212B-4B55-8F70-5F728C6FE203} = {7550B68F-7998-4D61-9D10-7D1D795F7270}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {346C6383-EFD3-4A26-BEBC-BB5FAA9A239D}

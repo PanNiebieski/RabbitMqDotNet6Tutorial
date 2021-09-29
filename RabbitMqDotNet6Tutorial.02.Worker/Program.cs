@@ -23,13 +23,13 @@ using (var channel = connection.CreateModel())
 
         Job job = JsonSerializer.Deserialize<Job>(jobAsJsonText);
 
-        Console.WriteLine(" [x] Received {0}", job.Message);
-        Console.WriteLine(" [x] Received {0}", job.Type);
+        Console.WriteLine(" [>] Received {0}", job.Message);
+        Console.WriteLine(" [>] Received {0}", job.Type);
 
         Thread.Sleep(job.HowManySecondsWillJobTake * 1000);
         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine(" [x] Done");
+        Console.WriteLine(" [>] Done");
         Console.ForegroundColor = ConsoleColor.Gray;
 
     };

@@ -12,7 +12,8 @@ using (var channel = connection.CreateModel())
 
     while (true)
     {
-        Console.WriteLine("Write [.] to increase time to do job for worker");
+        Console.WriteLine("Write [.] to increase time to do job for worker. Foreach [.]");
+        Console.WriteLine("Write [!] at least once. To make one worker fail job");
         Console.WriteLine("Write [q] or [Q] to exit.");
 
         string whatuserwrote = Console.ReadLine();
@@ -49,16 +50,19 @@ void WriteMessageOnConsole(string message)
 }
 
 Job CreateJob(string usertext)
-{ 
+{
     int howManySecondsWillJobTake = usertext.Split('.').Length - 1;
+    bool shouldFail = usertext.IndexOf('!') > 0;
 
-    string message = usertext.Replace(",", "")
+    string message = usertext.Replace("!", "")
         .Replace(".", "");
 
     return new Job()
     {
         Message = message,
         HowManySecondsWillJobTake = howManySecondsWillJobTake,
-        Type = JobType.SendEmail
+        Type = JobType.SendEmail,
+        ShouldFaillOnWorkerTwo = shouldFail
+
     };
 }
