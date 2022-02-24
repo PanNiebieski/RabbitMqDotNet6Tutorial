@@ -1,12 +1,15 @@
 ﻿using RabbitMQ.Client;
 using System.Text;
 
+Console.Title = "RabbitMqDotNet6Tutorial.01.Send";
+Console.WriteLine("RabbitMqDotNet6Tutorial.01.Send");
+
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", false,
+    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", true,
         false, false,  null);
 
     while (true)

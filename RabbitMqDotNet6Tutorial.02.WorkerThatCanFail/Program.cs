@@ -3,6 +3,10 @@ using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
 
+Console.Title = "RabbitMqDotNet6Tutorial.02.WorkerThatCanFail";
+Console.WriteLine("RabbitMqDotNet6Tutorial.02.WorkerThatCanFail");
+
+
 Console.ForegroundColor = GetRandomConsoleColor();
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
@@ -40,7 +44,8 @@ while (true)
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(" [x] Fail");
+                Console.WriteLine($" [x] Fail {job.Message}");
+                Console.WriteLine($" [x] Fail {job.Type}");
                 Console.ForegroundColor = ConsoleColor.Gray;
 
             }
@@ -52,8 +57,8 @@ while (true)
         channel.BasicConsume(queue: "RabbitMqDotNet6Tutorial.02", autoAck: false,
             consumer: consumer);
 
-            Console.WriteLine(" Press [enter] to restart connection.CreateModel()");
-            Console.ReadLine();
+        Console.WriteLine(" Press [enter] to restart connection.CreateModel()");
+        Console.ReadLine();
     }
 }
 

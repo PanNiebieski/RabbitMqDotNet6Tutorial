@@ -2,11 +2,15 @@
 using RabbitMQ.Client.Events;
 using System.Text;
 
+Console.Title = "RabbitMqDotNet6Tutorial.01.Receive";
+Console.WriteLine("RabbitMqDotNet6Tutorial.01.Receive");
+
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", durable: false, exclusive: false, autoDelete: false, arguments: null);
+    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", durable: true, 
+        exclusive: false, autoDelete: false, arguments: null);
 
     Console.WriteLine(" Waiting for messages.");
 
@@ -14,7 +18,7 @@ using (var channel = connection.CreateModel())
     consumer.Received += (model, ea) =>
     {
         var message = Encoding.UTF8.GetString(ea.Body.ToArray());
-        Console.Write("  Received: ");
+        Console.Write("-> Received: ");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(message);
         Console.ForegroundColor = ConsoleColor.Gray;

@@ -2,11 +2,15 @@
 using RabbitMQ.Client;
 using System.Text;
 
+Console.Title = "RabbitMqDotNet6Tutorial.02.NewJob";
+Console.WriteLine("RabbitMqDotNet6Tutorial.02.NewJob");
+
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 
 using (var channel = connection.CreateModel())
 {
+    //durbale = true ponieważ
     channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.02", true,
         false, false, null);
 

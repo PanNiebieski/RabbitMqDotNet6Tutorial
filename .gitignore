@@ -13,6 +13,8 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+/.vshistory
+
 # Mono auto generated files
 mono_crash.*
 
@@ -361,3 +363,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vshistory/RabbitMqDotNet6Tutorial.sln
+/RabbitMqDotNet6Tutorial.01.Receive/.vshistory/Program.cs
+/RabbitMqDotNet6Tutorial.01.Send/.vshistory/Program.cs
+/RabbitMqDotNet6Tutorial.02.NewTask/.vshistory/Program.cs
+/RabbitMqDotNet6Tutorial.02.Worker/.vshistory/Program.cs
+/RabbitMqDotNet6Tutorial.02.WorkerThatCanFail/.vshistory/Program.cs
+/RabbitMqDotNet6Tutorial.03.Publish/.vshistory
+/RabbitMqDotNet6Tutorial.03.Subscribe/.vshistory
+/RabbitMqDotNet6Tutorial.03.SubscribeSecond/.vshistory
+/RabbitMqDotNet6Tutorial.04.ProducerDirect/.vshistory
+/RabbitMqDotNet6Tutorial.04.ReciverDirectOne/.vshistory
+/RabbitMqDotNet6Tutorial.04.ReciverDirectTwo/.vshistory
+/RabbitMqDotNet6Tutorial.05.ProducerTopics/.vshistory
+/RabbitMqDotNet6Tutorial.05.ReciverTopics/.vshistory

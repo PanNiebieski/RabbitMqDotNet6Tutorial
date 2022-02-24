@@ -3,6 +3,10 @@ using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
 
+Console.Title = "RabbitMqDotNet6Tutorial.02.Worker";
+Console.WriteLine("RabbitMqDotNet6Tutorial.02.Worker");
+
+
 Console.ForegroundColor = GetRandomConsoleColor();
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
