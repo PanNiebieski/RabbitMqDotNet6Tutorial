@@ -6,11 +6,13 @@ Console.WriteLine("RabbitMqDotNet6Tutorial.01.Send");
 
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
-
 using (var channel = connection.CreateModel())
 {
-    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01", true,
-        false, false,  null);
+    channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.01",
+        durable: false,
+        exclusive: false, 
+        autoDelete: false, 
+        arguments: null);
 
     while (true)
     {
@@ -25,7 +27,9 @@ using (var channel = connection.CreateModel())
         string message = usermessage;
         var body = Encoding.UTF8.GetBytes(message);
 
-        channel.BasicPublish("", routingKey: "RabbitMqDotNet6Tutorial.01", null, body);
+        channel.BasicPublish(exchange: "", 
+            routingKey: "RabbitMqDotNet6Tutorial.01",
+            basicProperties: null, body);
 
         Console.WriteLine("");
         Console.ForegroundColor = ConsoleColor.Green;

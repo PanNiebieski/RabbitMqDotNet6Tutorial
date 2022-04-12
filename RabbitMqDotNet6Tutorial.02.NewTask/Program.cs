@@ -10,7 +10,7 @@ using (var connection = factory.CreateConnection())
 
 using (var channel = connection.CreateModel())
 {
-    //durbale = true ponieważ
+    //durbale = true ponieważ chcemy aby nasze zdania istniały po restarcie
     channel.QueueDeclare(queue: "RabbitMqDotNet6Tutorial.02", true,
         false, false, null);
 

@@ -20,6 +20,7 @@ using (var channel = connection.CreateModel())
     Console.WriteLine(" [*] Waiting for jobs.");
 
     var consumer = new EventingBasicConsumer(channel);
+
     consumer.Received += (model, ea) =>
     {
         byte[] body = ea.Body.ToArray();
