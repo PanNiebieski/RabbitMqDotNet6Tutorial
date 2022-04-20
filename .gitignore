@@ -377,3 +377,7 @@ FodyWeavers.xsd
 /RabbitMqDotNet6Tutorial.04.ReciverDirectTwo/.vshistory
 /RabbitMqDotNet6Tutorial.05.ProducerTopics/.vshistory
 /RabbitMqDotNet6Tutorial.05.ReciverTopics/.vshistory
+/RabbitMqDotNet6Tutorial.05.ReciverTopicsSecond/.vshistory
+/RabbitMqDotNet6Tutorial.07.PublisherConfirms/.vshistory
+/RabbitMqDotNet6Tutorial.07.RPCClient/.vshistory
+/RabbitMqDotNet6Tutorial.08.RPCServer/.vshistory

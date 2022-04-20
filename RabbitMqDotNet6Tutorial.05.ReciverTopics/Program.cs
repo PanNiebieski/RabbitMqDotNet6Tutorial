@@ -9,22 +9,24 @@ using (var channel = connection.CreateModel())
     channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.05", type: ExchangeType.Topic);
     var queueName = channel.QueueDeclare().QueueName;
 
-    if (args.Length < 1)
+    Console.WriteLine("Write what you want to RECVIE");
+
+    string usermessageBindingKey = Console.ReadLine();
+
+    if (string.IsNullOrWhiteSpace(usermessageBindingKey))
     {
-        Console.Error.WriteLine("Usage: {0} [binding_key...]",
-                                Environment.GetCommandLineArgs()[0]);
-        Console.WriteLine(" Press [enter] to exit.");
-        Console.ReadLine();
         Environment.ExitCode = 1;
         return;
     }
 
-    foreach (var bindingKey in args)
-    {
-        channel.QueueBind(queue: queueName,
+    Console.Error.WriteLine("Usage: {0} [binding_key...]",
+                                    usermessageBindingKey);
+
+
+    channel.QueueBind(queue: queueName,
                           exchange: "RabbitMqDotNet6Tutorial.05",
-                          routingKey: bindingKey);
-    }
+                          routingKey: usermessageBindingKey);
+
 
     Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 

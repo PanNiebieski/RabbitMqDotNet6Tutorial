@@ -23,23 +23,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Routing-Receiving message
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_Topics-Receiving messages based on a pattern", "5_Topics-Receiving messages based on a pattern", "{CCC01A38-B4DA-4F97-AC68-CDC03EC4D9E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.03.Publish", "RabbitMqDotNet6Tutorial.03.Publish\RabbitMqDotNet6Tutorial.03.Publish.csproj", "{614B818E-00F9-4010-A234-1A2FC686B8FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.03.Publish", "RabbitMqDotNet6Tutorial.03.Publish\RabbitMqDotNet6Tutorial.03.Publish.csproj", "{614B818E-00F9-4010-A234-1A2FC686B8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.03.SubscribeOne", "RabbitMqDotNet6Tutorial.03.Subscribe\RabbitMqDotNet6Tutorial.03.SubscribeOne.csproj", "{82D2D83F-9E6F-4716-8E44-C2876D264248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.03.SubscribeOne", "RabbitMqDotNet6Tutorial.03.Subscribe\RabbitMqDotNet6Tutorial.03.SubscribeOne.csproj", "{82D2D83F-9E6F-4716-8E44-C2876D264248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.03.SubscribeSecond", "RabbitMqDotNet6Tutorial.03.SubscribeSecond\RabbitMqDotNet6Tutorial.03.SubscribeSecond.csproj", "{ACF59512-FD88-4068-8BDE-BA897997797A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.03.SubscribeSecond", "RabbitMqDotNet6Tutorial.03.SubscribeSecond\RabbitMqDotNet6Tutorial.03.SubscribeSecond.csproj", "{ACF59512-FD88-4068-8BDE-BA897997797A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.04.ProducerDirect", "RabbitMqDotNet6Tutorial.04.ProducerDirect\RabbitMqDotNet6Tutorial.04.ProducerDirect.csproj", "{EB01B0E4-024F-4854-83D3-7F72CE11F5C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.04.ProducerDirect", "RabbitMqDotNet6Tutorial.04.ProducerDirect\RabbitMqDotNet6Tutorial.04.ProducerDirect.csproj", "{EB01B0E4-024F-4854-83D3-7F72CE11F5C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.04.ReciverDirectOne", "RabbitMqDotNet6Tutorial.04.ReciverDirectOne\RabbitMqDotNet6Tutorial.04.ReciverDirectOne.csproj", "{9C101E9C-52DC-485F-B8E7-13F4C7763810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.04.ReciverDirectOne", "RabbitMqDotNet6Tutorial.04.ReciverDirectOne\RabbitMqDotNet6Tutorial.04.ReciverDirectOne.csproj", "{9C101E9C-52DC-485F-B8E7-13F4C7763810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.05.ProducerTopics", "RabbitMqDotNet6Tutorial.05.ProducerTopics\RabbitMqDotNet6Tutorial.05.ProducerTopics.csproj", "{E14DCD37-CD6A-4901-9F79-47456023B93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.05.ProducerTopics", "RabbitMqDotNet6Tutorial.05.ProducerTopics\RabbitMqDotNet6Tutorial.05.ProducerTopics.csproj", "{E14DCD37-CD6A-4901-9F79-47456023B93A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.05.ReciverTopics", "RabbitMqDotNet6Tutorial.05.ReciverTopics\RabbitMqDotNet6Tutorial.05.ReciverTopics.csproj", "{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.05.ReciverTopics", "RabbitMqDotNet6Tutorial.05.ReciverTopics\RabbitMqDotNet6Tutorial.05.ReciverTopics.csproj", "{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.05.ReciverTopicsSecond", "RabbitMqDotNet6Tutorial.05.ReciverTopicsSecond\RabbitMqDotNet6Tutorial.05.ReciverTopicsSecond.csproj", "{4A9078FF-BDF8-4497-962A-E8E7A8FC171D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.04.ReciverDirectTwo", "RabbitMqDotNet6Tutorial.04.ReciverDirectTwo\RabbitMqDotNet6Tutorial.04.ReciverDirectTwo.csproj", "{BB13AB51-1F88-4C9E-9573-2700BB3745DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.04.ReciverDirectTwo", "RabbitMqDotNet6Tutorial.04.ReciverDirectTwo\RabbitMqDotNet6Tutorial.04.ReciverDirectTwo.csproj", "{BB13AB51-1F88-4C9E-9573-2700BB3745DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-2-Queue", "1-2-Queue", "{A557D2A1-1483-4CDA-9EA9-839ABC14A657}"
 EndProject
@@ -47,9 +45,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-4-5-6-Exchange", "3-4-5-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_Request-reply pattern", "6_Request-reply pattern", "{A9F2A953-1D16-49AF-B10D-887227422F44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.06.RPCClient", "RabbitMqDotNet6Tutorial.07.RPCClient\RabbitMqDotNet6Tutorial.06.RPCClient.csproj", "{EEA0BA68-C4BA-4F3F-BD3B-7C5D314463AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.06.RPCClient", "RabbitMqDotNet6Tutorial.07.RPCClient\RabbitMqDotNet6Tutorial.06.RPCClient.csproj", "{EEA0BA68-C4BA-4F3F-BD3B-7C5D314463AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.06.RPCServer", "RabbitMqDotNet6Tutorial.08.RPCServer\RabbitMqDotNet6Tutorial.06.RPCServer.csproj", "{763859BF-951E-43A5-9334-339DFE3BCACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqDotNet6Tutorial.06.RPCServer", "RabbitMqDotNet6Tutorial.08.RPCServer\RabbitMqDotNet6Tutorial.06.RPCServer.csproj", "{763859BF-951E-43A5-9334-339DFE3BCACC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_PublisherConfirms", "7_PublisherConfirms", "{EB35F123-A259-450E-95BC-6DFC8B46D58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqDotNet6Tutorial.07.PublisherConfirms", "RabbitMqDotNet6Tutorial.07.PublisherConfirms\RabbitMqDotNet6Tutorial.07.PublisherConfirms.csproj", "{AD41257E-3592-4899-A4B1-679780B5F945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,10 +107,6 @@ Global
 		{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A9078FF-BDF8-4497-962A-E8E7A8FC171D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A9078FF-BDF8-4497-962A-E8E7A8FC171D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A9078FF-BDF8-4497-962A-E8E7A8FC171D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A9078FF-BDF8-4497-962A-E8E7A8FC171D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB13AB51-1F88-4C9E-9573-2700BB3745DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB13AB51-1F88-4C9E-9573-2700BB3745DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB13AB51-1F88-4C9E-9573-2700BB3745DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,6 +119,10 @@ Global
 		{763859BF-951E-43A5-9334-339DFE3BCACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763859BF-951E-43A5-9334-339DFE3BCACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{763859BF-951E-43A5-9334-339DFE3BCACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD41257E-3592-4899-A4B1-679780B5F945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD41257E-3592-4899-A4B1-679780B5F945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD41257E-3592-4899-A4B1-679780B5F945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD41257E-3592-4899-A4B1-679780B5F945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,10 +145,10 @@ Global
 		{9C101E9C-52DC-485F-B8E7-13F4C7763810} = {AE1A2873-18AC-4E23-994A-EB4AF82B96BF}
 		{E14DCD37-CD6A-4901-9F79-47456023B93A} = {CCC01A38-B4DA-4F97-AC68-CDC03EC4D9E4}
 		{45A5DBCE-C09C-45BE-B3BD-B4E20E31ABAC} = {CCC01A38-B4DA-4F97-AC68-CDC03EC4D9E4}
-		{4A9078FF-BDF8-4497-962A-E8E7A8FC171D} = {CCC01A38-B4DA-4F97-AC68-CDC03EC4D9E4}
 		{BB13AB51-1F88-4C9E-9573-2700BB3745DD} = {AE1A2873-18AC-4E23-994A-EB4AF82B96BF}
 		{EEA0BA68-C4BA-4F3F-BD3B-7C5D314463AC} = {A9F2A953-1D16-49AF-B10D-887227422F44}
 		{763859BF-951E-43A5-9334-339DFE3BCACC} = {A9F2A953-1D16-49AF-B10D-887227422F44}
+		{AD41257E-3592-4899-A4B1-679780B5F945} = {EB35F123-A259-450E-95BC-6DFC8B46D58D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {346C6383-EFD3-4A26-BEBC-BB5FAA9A239D}
