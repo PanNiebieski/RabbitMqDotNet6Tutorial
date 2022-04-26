@@ -8,7 +8,8 @@ var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.04", type: ExchangeType.Direct);
+    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.04", type: 
+        ExchangeType.Direct);
     var queueName = channel.QueueDeclare().QueueName;
 
     RoutingKey key1 = RoutingKey.Email;

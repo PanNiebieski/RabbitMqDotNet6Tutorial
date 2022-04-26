@@ -8,7 +8,8 @@ using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
 
-    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.04", type: ExchangeType.Direct);
+    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.04", 
+        type: ExchangeType.Direct);
 
     while (true)
     {

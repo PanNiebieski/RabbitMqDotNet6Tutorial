@@ -6,7 +6,8 @@ var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.05", type: ExchangeType.Topic);
+    channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.05",
+        type: ExchangeType.Topic);
     var queueName = channel.QueueDeclare().QueueName;
 
     Console.WriteLine("Write what you want to RECVIE");

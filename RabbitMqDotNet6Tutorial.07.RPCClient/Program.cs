@@ -7,12 +7,18 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
+while (true)
+{
+
+    Console.WriteLine("RPC Client");
+    string n = args.Length > 0 ? args[0] : "30";
+    Task t = InvokeAsync(n);
+    await t;
+    Console.WriteLine(" Press [enter] to exit.");
+    Console.ReadKey();
+}
 
 
-Console.WriteLine("RPC Client");
-string n = args.Length > 0 ? args[0] : "30";
-Task t = InvokeAsync(n);
-t.Wait();
 
 Console.WriteLine(" Press [enter] to exit.");
 Console.ReadLine();
@@ -45,7 +51,8 @@ class RpcClient
     private readonly IModel _channel;
     private readonly string _replyQueueName;
     private readonly EventingBasicConsumer _consumer;
-    private readonly ConcurrentDictionary<string, TaskCompletionSource<string>> _callbackMapper =
+    private readonly ConcurrentDictionary<string,
+        TaskCompletionSource<string>> _callbackMapper =
                 new ConcurrentDictionary<string, TaskCompletionSource<string>>();
 
     public RpcClient()
@@ -67,7 +74,8 @@ class RpcClient
         };
     }
 
-    public Task<string> CallAsync(string message, CancellationToken cancellationToken = default(CancellationToken))
+    public Task<string> CallAsync
+        (string message, CancellationToken cancellationToken = default(CancellationToken))
     {
         IBasicProperties props = _channel.CreateBasicProperties();
         var correlationId = Guid.NewGuid().ToString();
@@ -88,7 +96,9 @@ class RpcClient
             queue: _replyQueueName,
             autoAck: true);
 
-        cancellationToken.Register(() => _callbackMapper.TryRemove(correlationId, out var tmp));
+        cancellationToken.Register(() => _callbackMapper.
+        TryRemove(correlationId, out var tmp));
+
         return tcs.Task;
     }
 

@@ -10,7 +10,9 @@ using (var channel = connection.CreateModel())
         type: ExchangeType.Fanout, durable: true, autoDelete: false, arguments: null);
 
     var queueName = channel.QueueDeclare().QueueName;
-    channel.QueueBind(queue: queueName, exchange: "RabbitMqDotNet6Tutorial.03", routingKey: "");
+    channel.QueueBind(queue: queueName, 
+        exchange: 
+        "RabbitMqDotNet6Tutorial.03", routingKey: "");
 
     Console.WriteLine(" [*] Waiting for logs.");
 

@@ -19,7 +19,7 @@ using (var channel = connection.CreateModel())
         return;
     }
 
-    var message = "Hello World!";
+    var message = "Daj komentarz";
 
     var body = Encoding.UTF8.GetBytes(message);
     channel.BasicPublish(exchange: "RabbitMqDotNet6Tutorial.05",
